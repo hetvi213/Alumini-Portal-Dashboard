@@ -1,0 +1,29 @@
+# Build directories
+/build/
+/dist/
+/target/
+
+# IDE
+.classpath
+.project
+.settings/
+.vscode/
+*.nb*
+
+# Java
+*.class
+*.jar
+*.ear
+*.war
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Uploads
+/web/uploads/
+/uploads/
