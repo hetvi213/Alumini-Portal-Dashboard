@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Events Gallery</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+        }
+
+        header {
+            background-color: #002d72;
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .section-title {
+            font-size: 24px;
+            margin: 30px 20px 10px;
+            color: #002244;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+            padding: 0 20px 40px;
+        }
+
+        .gallery img {
+            width: 210px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        @media (min-width: 600px) {
+            .gallery img {
+                width: 180px;
+                height: 130px;
+            }
+        }
+    </style>
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>University of Mumbai - UPG College of Arts, Science & Commerce</h1>
+    </header>
+
+    <!-- 2025 Event Gallery -->
+    <section>
+        <div align="center" class="section-title">2025 Alumni Day: Annual General Meeting and Dinner</div> <br>
+        <div class="gallery">
+            <img src="41.jpg" data-aos="zoom-in" alt="2025 Event 1">
+            <img src="42.jpg" data-aos="fade-up" alt="2025 Event 2">
+            <img src="43.jpg" data-aos="zoom-in" alt="2025 Event 3">
+            <img src="44.jpg" data-aos="fade-up" alt="2025 Event 4">
+            <img src="45.jpg" data-aos="zoom-in" alt="2025 Event 5">
+            <img src="46.jpg" data-aos="fade-up" alt="2025 Event 6">
+        </div>
+    </section>
+
+    <!-- 2024 Event Gallery -->
+    <section>
+        <div align="center" class="section-title">2024 Alumni Day: Annual General Meeting and Dinner</div> <br>
+        <div class="gallery">
+            <img src="31.jpg" data-aos="fade-up" alt="2024 Event 1">
+            <img src="32.jpg" data-aos="zoom-in" alt="2024 Event 2">
+            <img src="33.jpg" data-aos="fade-up" alt="2024 Event 3">
+            <img src="34.jpg" data-aos="zoom-in" alt="2024 Event 4">
+            <img src="35.jpg" data-aos="fade-up" alt="2024 Event 5">
+            <img src="36.jpg" data-aos="zoom-in" alt="2024 Event 6">
+        </div>
+    </section>
+    
+    <!-- 2023 Event Gallery -->
+    <section>
+        <div align="center" class="section-title">2023 Alumni Day: Annual General Meeting and Dinner</div> <br>
+        <div class="gallery">
+            <img src="41.jpg" data-aos="zoom-in" alt="2025 Event 1">
+            <img src="42.jpg" data-aos="fade-up" alt="2025 Event 2">
+            <img src="43.jpg" data-aos="zoom-in" alt="2025 Event 3">
+            <img src="44.jpg" data-aos="fade-up" alt="2025 Event 4">
+            <img src="45.jpg" data-aos="zoom-in" alt="2025 Event 5">
+            <img src="46.jpg" data-aos="fade-up" alt="2025 Event 6">
+        </div>
+    </section>
+    
+    <!-- 2022 Event Gallery -->
+    <section>
+        <div align="center" class="section-title">2022 Alumni Day: Annual General Meeting and Dinner</div> <br>
+        <div class="gallery">
+            <img src="31.jpg" data-aos="fade-up" alt="2024 Event 1">
+            <img src="32.jpg" data-aos="zoom-in" alt="2024 Event 2">
+            <img src="33.jpg" data-aos="fade-up" alt="2024 Event 3">
+            <img src="34.jpg" data-aos="zoom-in" alt="2024 Event 4">
+            <img src="35.jpg" data-aos="fade-up" alt="2024 Event 5">
+            <img src="36.jpg" data-aos="zoom-in" alt="2024 Event 6">
+        </div>
+    </section>
+    
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,347 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /*overflow-y: hidden;*/
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('Poppins-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  background: #ffffff;
+  padding: 25px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* soft shadow */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  overflow-y: hidden;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.branding img {
+  height: 60px;
+}
+
+.college-name-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+.college-name {
+  opacity: 0;
+  transform: translateX(-100px); /* fallback for GSAP */
+  transition: none;
+  font-size: 22px;
+  font-family: Poppins;
+  font-weight: bold;
+  color: #222;
+  white-space: nowrap;
+}
+
+.v-line {
+  width: 3px;
+  height: 0; /* important for GSAP animation to start from zero */
+  color:red;
+  margin-right: 12px;
+}
+
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 17px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 5px;
+}
+
+nav a:hover {
+  color: #0077cc;
+  border-bottom: 2px solid #0077cc;
+}
+
+  body { font-family: Arial, sans-serif; margin:0; padding:0; }
+
+.hero {
+  height: 100vh;
+  background-image: url('../pic/photo4.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.hero h1 {
+    margin-top: -30px;
+  font-size: 48px;
+  font-family: 'Gilroy', sans-serif;
+  text-align: center;
+}
+
+.hero p {
+  font-size: 18px;
+  margin: 10px 0;
+  text-align: center;
+  max-width: 800px;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #3366ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #555;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+footer {
+  background: #222;
+  color: #bbb;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+footer nav a {
+  color: #bbb;
+  margin: 0 8px;
+  text-decoration: none;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #2a45ff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Optional background color for different sections */
+#mission, #mentorship, #events, #news {
+  background-color: #f7f7f7;
+}
+
+.mentorship-custom {
+  background-color: #bc1414;
+  border-radius: 20px;
+  padding: 40px 40px;
+  margin: 0 80px;
+  color: red;
+  flex-direction: row; /* image right */
+}
+
+.mentorship-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.mentorship-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.mentorship-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: white;
+}
+
+.btn-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: underline;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+}
+
+.mentorship-image {
+  flex: 1;
+  text-align: center;
+}
+
+.mentorship-image img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+/* Base styles aapke existing hain, main unhe nahi badal raha */
+
+@media (max-width: 1024px) {
+  .about-container, .mentorship-custom {
+    flex-direction: column;
+    padding: 40px 20px;
+    margin: 0 20px;
+  }
+
+  .about-text, .mentorship-text, .about-image, .mentorship-image {
+    flex: none;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .mentorship-text {
+    padding-right: 0;
+  }
+
+  nav a {
+    margin: 0 10px;
+    font-size: 15px;
+  }
+
+  header {
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+    padding: 0 10px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    max-width: 90%;
+  }
+
+  .hero .btn, .btn-secondary {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  nav a {
+    margin: 0 8px;
+    font-size: 14px;
+  }
+
+  .branding img {
+    height: 40px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .college-name-container {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  nav a {
+    margin: 0 5px;
+    font-size: 13px;
+  }
+
+  .about-container, .mentorship-custom {
+    padding: 20px 10px;
+    margin: 0 10px;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 20px 10px;
+  }
+}
+

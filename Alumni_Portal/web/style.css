@@ -1,0 +1,123 @@
+/* Page styling */
+*{
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f2f6fc;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Form container */
+.form-container {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input groups */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Name row layout */
+.name-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.select-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.select-row .input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Submit button */
+input[type="submit"] {
+    width: 100%;
+    background-color: #00008B;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Login link */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .name-row {
+        flex-direction: column;
+    }
+}
